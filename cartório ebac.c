@@ -20,41 +20,41 @@ int registro() // função responsavel por cadastrar os usuários no sistema
 	
 	FILE *file; // cria o arquivo e o "W" significa escrever
 	file = fopen(arquivo, "w"); // cria o arquivo
-	fprintf(file,cpf); // salvo o valor da variavel
+	fprintf(file,cpf); // salva o valor da variavel
 	fclose(file); // fecha o arquivo
 	
 	file = fopen(arquivo, "a"); // cria o arquivo 
-	fprintf(file,","); // cria o arquivo 
+	fprintf(file,","); // salva o valor da variável 
 	fclose(file); // fecha o arquivo 
 	
 	printf("Digite o nome a ser cadastrado: "); // coletando informações do usuário
 	scanf("%s",nome); //%s refere-se a string
 	
-	file = fopen(arquivo, "a");
-	fprintf(file,nome);
-	fclose(file);
+	file = fopen(arquivo, "a"); // cria o arquivo 
+	fprintf(file,nome); // salva o valor da variável 
+	fclose(file); // fecha o arquivo 
 	
-	file = fopen(arquivo, "a");
-	fprintf(file,",");
-	fclose(file);
+	file = fopen(arquivo, "a"); // cria o arquivo 
+	fprintf(file,","); //salva o valor da variável 
+	fclose(file);// fecha o arquivo
 	
-	printf("Digite o sobrenome a ser cadastrado: ");
-	scanf("%s",sobrenome);
+	printf("Digite o sobrenome a ser cadastrado: "); // coletando informações do usuário 
+	scanf("%s",sobrenome); // %s refere-se a string
 	
-	file = fopen(arquivo, "a");
-	fprintf(file,sobrenome);
-	fclose(file);
+	file = fopen(arquivo, "a"); // cria o arquivo 
+	fprintf(file,sobrenome); // salva o valor da variável 
+	fclose(file); // fecha o arquivo 
 	
-	file = fopen(arquivo, "a");
-	fprintf(file,",");
-	fclose(file);
+	file = fopen(arquivo, "a"); // cria o arquivo 
+	fprintf(file,","); // salva o valor da variável 
+	fclose(file); // fecha o arquivo 
 	
-	printf("Digite o cargo a ser cadastrado: ");
-	scanf("%s",cargo);
+	printf("Digite o cargo a ser cadastrado: "); // coletando iunformações do usuário 
+	scanf("%s",cargo); // %s refere-se a string
 	
-	file = fopen(arquivo, "a");
-	fprintf(file,cargo);
-	fclose(file);	
+	file = fopen(arquivo, "a"); // cria o arquivo 
+	fprintf(file,cargo); // salva o valor da variável 
+	fclose(file); // fecha o arquivo 
 	
     system("pause");
 
@@ -67,8 +67,8 @@ int consulta()
 	char cpf[40];
 	char conteudo[200];
 	
-	printf("Digite o CPF a ser consultado: ");
-	scanf("%s",cpf);
+	printf("Digite o CPF a ser consultado: "); // coletando informações do usuário
+	scanf("%s",cpf); // %s refere-se a string
 	
 	FILE *file;
 	file = fopen(cpf,"r");
@@ -152,7 +152,7 @@ int main()
 			break;
 			
 			case 4:
-			printf(" Obrigado por utilizar o sistema\n");	
+			printf(" Obrigado por utilizar o sistema\n"); 	
 			return 0;
 			break;
 		
